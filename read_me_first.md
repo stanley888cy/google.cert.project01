@@ -1,10 +1,10 @@
 # google.cert.project01
 
-Hi. This is my first data analysis project and also my first time to use R in my work. They are the capstone project for Google Data Analysis Certificate Course offered in Coursera. ( https://www.coursera.org/professional-certificates/google-data-analytics) 
+Hi. This is my first data analysis project and also my first time to use R in my work. They are the capstone project for Google Data Analysis Certificate Course offered in Coursera. (https://www.coursera.org/professional-certificates/google-data-analytics) 
 Tt is about operation data analysis of a frictional bike-share company in Chicago. For detailed background story, please check the pdf file ( Case 01.pdf) for reference. 
 
 
-I have divided the my project work into 3 files:  
+I have divided my project works into 3 files:  
 1. Capstone Project 01 Part 1 (Tasks) is the first part. 
     They are related to background introduction, my business tasks and objectives, and how I obtain the data sources for analysis.
 2. Capstone Project 01 Part 2 (Code) is the second part.
@@ -15,5 +15,5 @@ I also provide a folder which contains R code and R markdown for reference.
 
 I understand that I am just new to data analysis and R but I am working hard to learn more. If you have any idea or feedback. please feel free to comment.
 
-(Noted: I think the most challenging is the R codeing part in ggplot2. As I am first time to use R, several function I have to check and search find the internet. 
+(Notes: I think the most challenging is the R coding part in ggplot2. As I am first time to use R, several function I have to check and search find the internet. 
 To make it more effective, it is better to export the cleaned data in rda/csv format, then use Tableau for higher efficiency...) 
