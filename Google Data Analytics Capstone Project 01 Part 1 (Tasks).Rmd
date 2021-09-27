@@ -1,0 +1,147 @@
+---
+title: "Google Data Analytics Capstone Project 1"
+author: "Stanley Cheng"
+date: "2021/9/23"
+output:
+  pdf_document: default
+  html_document: default
+---
+In this case study, I will perform data analysis project for a fictional bike-share company in order to help them attract more riders.
+
+
+
+
+### Background Scenario
+Cyclistic is a bike-share company that features more than 5,800 bicycles and 600 docking stations in Chicago, United States. Cyclistic has 3 type of pricing plans: single-ride passes, full-day passes, and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders and Customers who purchase annual memberships are Cyclistic members.
+<br>
+The marketing director of Cyclistic, Moreno, believes the company’s future success depends on maximizing the number of annual memberships. Therefore, she asks the data analysis team to understand how casual riders and annual members use Cyclistic bikes differently. The team will be responsible for collecting, analyzing, and reporting from historical bike trip data. And the result will help to guide Cyclistic future marketing strategy. 
+<br>
+<br>
+
+### Business Task
+To analyze the trends or differences between annual members and casual riders use Cyclistic bikes. And suggest recommendations based on these analysis and findings. 
+<br>
+<br>
+
+### Data Sources
+1 year, 2020-Sep to 2021-Aug, of historical bike trip data are downloaded from a real bike company, Motivate International Inc. ( <https://divvy-tripdata.s3.amazonaws.com/index.html> ). Therefore, the data should be considered as reliable and first-hand primary source. 
+
+(Note: this is the suggested material by the course and the data is for the purposes of this case study project only. The data has been made available by Motivate International Inc. under this license (<https://www.divvybikes.com/data-license-agreement>). This is public data that you can use to explore how different customer types are using Cyclistic bikes. But note that data-privacy issues prohibit you from using riders’ personally identifiable information.)
+
+There are total 12 csv files for the 2020-Sep to 2021-Aug data. They will be loaded into RStudio for a first glance. The following steps will be perform in R-Studio.
+
+<br>
+<br>
+
+### Data Processing
+(Note: The following parts will be performed in RStudio. Files path should be adjusted according to your own computer settings.) 
+
+
+### Share and Visualization
+In this part, I will share those insight found from the data analysis.
+
+* Overall analysis 
+
+<br>
+
+![](C:/Users/2015002-1/Desktop/Personal/證書 Google Data Analysts/Course 8/Case 1/Graphs/overall_info_2.png)
+
+![](C:/Users/2015002-1/Desktop/Personal/證書 Google Data Analysts/Course 8/Case 1/Graphs/overall_info_1.png)
+
+ 
+Insight and Interpretation: \
+In the last year, 56.39% of Cyclistic rides are members while 43.61% are casuals. Although the members have more numbers of ride, their average ride minutes (13.7 mins) is significantly lower than casuals (22.8 mins) by 50%. Casual users are spending more riding minutes in each rides. This results a smaller total rides minutes in member than casual by around 30%.
+<br>
+
+* Analysis by Month
+
+<br>
+![](C:/Users/2015002-1/Desktop/Personal/證書 Google Data Analysts/Course 8/Case 1/Graphs/month_1.png)
+ 
+Insight and Interpretation: \
+A seasonal cyclic pattern of rides number is observed in both members and casuals. The rides number increase significantly from February and reaches the peak at July and August. Then the numbers drastically drop at the end of year. 
+After checking the average monthly temperature, a similar seasonal pattern is also observed. Therefore a possible explanation is: During the spring and summer time (Feb to Sep), the weather is warmer and suitable to ride. And during the winter time (Oct-Feb) time, it is too cold to ride outside and people tends to stop riding bike under such weather condition. 
+<br>
+
+
+
+* Analysis by Hour:
+
+<br>
+![](C:/Users/2015002-1/Desktop/Personal/證書 Google Data Analysts/Course 8/Case 1/Graphs/hour_1.png) 
+
+Insight and Interpretation: \ 
+
+For the ride number, a daily cycle of rides number are observed in both members and casuals. Both ride numbers are significantly bigger during daytime and they reach the peaks at afternoon time. The numbers are then drastically drop when getting into evening and night time. 
+A possible explanation is: During the day time people are more likely to make a ride. They may use the bike to go to shops, schools or work. And during evening and night time, people are less likely to bike as they go to rest and sleep. 
+<br>
+
+* Analysis by Weekday 
+
+<br>
+![](C:/Users/2015002-1/Desktop/Personal/證書 Google Data Analysts/Course 8/Case 1/Graphs/weekday_1.png)
+
+Insight and Interpretation: \
+
+Members and casuals demonstrate a different pattern of ride number across a week. Members tends to have a steady and even distribution across a week. Casuals have a significant low rides on weekdays (Monday to Friday), but a shape increase of ride number during Saturday and Sunday. A possible explanation is: Members usually have a regular biking practice and they have incorporated biking in their daily live. They may biking for work, school or regular exercise etc. On the other hand, casuals have no such habit and they only take rides when they are in holiday. (Saturday and Sunday)   
+<br>
+
+* Analysis by starting location
+
+<br>
+
+![](C:/Users/2015002-1/Desktop/Personal/證書 Google Data Analysts/Course 8/Case 1/Graphs/station_compare.png) 
+ 
+Insight and Interpretation: \
+
+For members, their top 10 start locations are quite similar in ride numbers (around 20000 rides each). For casuals, “Streeter Dr & Grand Ave” are their top leading start location and it has a significant large number of biking compared to other locations. 
+<br> 
+
+* Analysis by Route 
+
+<br>
+
+![](C:/Users/2015002-1/Desktop/Personal/證書 Google Data Analysts/Course 8/Case 1/Graphs/route_1.png) 
+![](C:/Users/2015002-1/Desktop/Personal/證書 Google Data Analysts/Course 8/Case 1/Graphs/route_2.png)
+ 
+Insight and Interpretation: \
+
+These are the top 10 routes for members and casual. They represent different bike travel pattern or location segment between members and casuals.  
+For members, locations like “Ellis Ave & 60 St”, “Ellis Ave & 60 St”, “State St & 33 St”, “Loomis St & Lexington St” etc. are appeared in the lists for more than one time.
+For casuals, locations like “Streeter Dr & Grand Ave”, “Lake Shore Dr & Monroe St”, “Michigan Ave & Oak St” and “Millennium Park” are appeared in the lists for more than one time. Beside, most of the location are the travel hotspot or landmarks of the city. And the top 3 casual routes have the same starting and ending location. One of the possible interpretation is that casuals may just take a sightseeing or in these area during their tours. <br>
+<br>
+<br>
+
+
+### Conclusion and Recommendation
+Based on the above analysis, it can be concluded that the members and casuals, in some field, perform in different way. Some recommendation to Marketing and Operation teams to consider: \
+
+1.	As I don’t have any data related to income or revenue, it can only be assumed that every ride generate revenue according to ride minutes. From the analysis result, casuals have a larger total rides and average ride minutes than members. Therefore, casuals group are an important group of people to the company.   \
+
+2.	Special promotion in particular period: \
+
+(a)	The number of riding in winter months is significant lower than others. To prevent an excess supply of bike, marketing team can offer a seasonal discount or promotion, or operation team can perform annual repair or maintenance during that period.\
+
+(b)	For casuals, the number of casual riding in weekdays is significant lower than member. To attract more biking, a weekday promotion may be a possible way to improve the bikes ride numbers.\
+
+3.	Focus adverting in particular area or location: From the starting station and route analysis, there are significant different in biking location between members and casuals. In order to attract more casuals to become members, a focus and concentrated advertisement should be perform in those area for higher efficiency.\
+
+4.	Based on the above recommendation, a series of special membership packages, e.g. seasonal-pass, weekend-pass can be offered. Those packages can be used to further segment or differentiate the customers. I hope those will attract more people to join our biking membership and increase Cyclistic revenue. 
+<br>
+<br>
+<br>
+
+### Possible further follow-ups:
+1.	Revised pricing or segment strategy, there may be ways to add new segment to improve revenue.
+2.	Data checking or verification, find out the reason of missing or error data in record field.
+3.	Detailed analysis in multi-variable factors. 
+<br>
+<br>
+<br>
+
+### 
+
+This is the end my data analysis for Cyclistic company. Thanks for reading till the end and Feel free to comment. 
+
+
+
