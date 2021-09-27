@@ -3,6 +3,7 @@
 Hi. This is my first data analysis project and also my first time to use R in my work. They are the capstone project for Google Data Analysis Certificate Course offered in Coursera. (https://www.coursera.org/professional-certificates/google-data-analytics) 
 Tt is about operation data analysis of a frictional bike-share company in Chicago. For detailed background story, please check the pdf file ( Case 01.pdf) for reference. 
 
+In this case study, I use a bike-share company data to evaluate the biking performance between members and casuals, determine if there are any trends or patterns, and theorize what are causing them. I am then able to develop a recommendation based on those findings.
 
 I have divided my project works into 3 files:  
 1. Capstone Project 01 Part 1 (Tasks) is the first part. 
