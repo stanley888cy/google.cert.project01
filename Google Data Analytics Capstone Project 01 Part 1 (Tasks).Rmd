@@ -1,0 +1,38 @@
+---
+title: "Google Data Analytics Capstone Project 1"
+author: "Stanley Cheng"
+date: "2021/9/23"
+output:
+  pdf_document: default
+  html_document: default
+---
+In this case study, I will perform data analysis project for a fictional bike-share company in order to help them attract more riders.
+
+
+
+
+### Background Scenario
+Cyclistic is a bike-share company that features more than 5,800 bicycles and 600 docking stations in Chicago, United States. Cyclistic has 3 type of pricing plans: single-ride passes, full-day passes, and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders and Customers who purchase annual memberships are Cyclistic members.
+<br>
+The marketing director of Cyclistic, Moreno, believes the company’s future success depends on maximizing the number of annual memberships. Therefore, she asks the data analysis team to understand how casual riders and annual members use Cyclistic bikes differently. The team will be responsible for collecting, analyzing, and reporting from historical bike trip data. And the result will help to guide Cyclistic future marketing strategy. 
+<br>
+<br>
+
+### Business Task
+To analyze the trends or differences between annual members and casual riders use Cyclistic bikes. And suggest recommendations based on these analysis and findings. 
+<br>
+<br>
+
+### Data Sources
+1 year, 2020-Sep to 2021-Aug, of historical bike trip data are downloaded from a real bike company, Motivate International Inc. ( <https://divvy-tripdata.s3.amazonaws.com/index.html> ). Therefore, the data should be considered as reliable and first-hand primary source. 
+
+(Note: this is the suggested material by the course and the data is for the purposes of this case study project only. The data has been made available by Motivate International Inc. under this license (<https://www.divvybikes.com/data-license-agreement>). This is public data that you can use to explore how different customer types are using Cyclistic bikes. But note that data-privacy issues prohibit you from using riders’ personally identifiable information.)
+
+There are total 12 csv files for the 2020-Sep to 2021-Aug data. They will be loaded into RStudio for a first glance. The following steps will be perform in R-Studio.
+
+<br>
+<br>
+
+### Data Processing
+(Note: The following parts will be performed in RStudio. Files path should be adjusted according to your own computer settings.) 
+
